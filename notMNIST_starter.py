@@ -72,7 +72,7 @@ net.SGD(trainingData, 7, 5, 0.7886326, test_data = testingData)
 end = time.time()
 
 finish = end - start
-print("Run time: ", finish)
+print("Run time in seconds: ", finish)
 network.saveToFile(net, "part2.pkl")
 
 

@@ -103,7 +103,7 @@ net.SGD(trainingData, 9, 3, 0.69, test_data = testingData)
 end = time.time()
 
 finish = end - start
-print("Run time: ", finish)
+print("Run time in seconds: ", finish)
 # saving the neural net
 network.saveToFile(net, "part1.pkl")
 
