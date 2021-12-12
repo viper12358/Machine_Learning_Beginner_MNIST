@@ -25,8 +25,8 @@ def standardize(x, mu, sigma):
 ##############################################
 
 def getDataFromSample(sample):
-    # [1]               min		max		average		std.dev
-    # sbp				101		218		138.3		20.5
+    #                   min		max		average		std.dev
+    # sbp				101		218		138.3		20.5        [1]  
     sbp_mean = 138.3
     sbp_stdDev = 20.5
     sbp = cv([standardize(float(sample[1]), sbp_mean, sbp_stdDev)])

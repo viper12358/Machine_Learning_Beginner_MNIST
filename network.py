@@ -180,17 +180,10 @@ class Network(object):
 
     # adding a function to extract data that the testing failed
     # I figured the best way is to store them as 2D array: row for the position in the dataset and column for label.
+    
     def getFailedData(self, testingData):
-        row = []
-        col = []
-        i = 0
-        for image, correct in testingData:
-            #  Returns the indices of the maximum values along an axis
-            result = (np.argmax(self.feedforward(image)))
-            if result != correct:
-                row.append(i)
-                col.append(result)
-            i += 1
+        col = [(np.argmax(self.feedforward(i))) for i, c in testingData if (np.argmax(self.feedforward(i))) != c]
+        row = range(len(col))
         return row, col
     
  
