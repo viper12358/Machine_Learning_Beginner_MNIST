@@ -6,6 +6,7 @@ import time
 # to run the code: python MNIST_starter.py
 # the program will train a neural net with specified parameters, and output the net in a file called `part1.pkl`. The binary
 # To extract pictures that the program failed to identify, please refer to extract.py
+# Note: multiple run might need to be done to get desirable results (Accuracy > 95%)
 
 # converts a 1d python list into a (1,n) row vector
 def rv(vec):
